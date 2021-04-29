@@ -1,6 +1,6 @@
-FROM nginx:1.13.7-alpine
+FROM nginx:1.19.10-alpine
 
-RUN  apk add --update nodejs && npm install chokidar-cli -g
+RUN  apk add --update nodejs npm && npm install chokidar-cli -g
 
 ENV SHELL=/bin/sh
 ENV NGINX_OPTIONS=
