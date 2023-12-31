@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "docker build -t whitecolor/nginx-dev:1.19.10-alpine .",
-    "push": "docker push whitecolor/nginx-dev:1.19.10-alpine"
+    "build-alpine": "docker build -t whitecolor/nginx-dev:stable-alpine3.17 alpine",
+    "push-alpine": "docker push whitecolor/nginx-dev:stable-alpine3.17",
+    "build-latest": "docker build -t whitecolor/nginx-dev:latest latest",
+    "push-latest": "docker push whitecolor/nginx-dev:latest "
   }
 }

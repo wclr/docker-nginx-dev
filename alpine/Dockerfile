@@ -1,4 +1,5 @@
-FROM nginx:1.19.10-alpine
+FROM nginx:stable-alpine3.17
+
 
 RUN  apk add --update nodejs npm && npm install chokidar-cli -g
 
