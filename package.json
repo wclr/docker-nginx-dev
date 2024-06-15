@@ -4,10 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build-nginx-alpine": "docker build -t whitecolor/nginx-dev:stable-alpine3.17 alpine",    
-    "build-nginx": "docker build -t whitecolor/nginx-dev:latest nginx-alpine",
-    "push-nginx-latest": "docker push whitecolor/nginx-dev:latest latest",
+    "build-nginx": "docker build -t whitecolor/nginx-dev:stable-alpine3.17 nginx-alpine",    
+    "push-nginx": "docker push whitecolor/nginx-dev:stable-alpine3.17",
+    "build-nginx-latest": "docker build -t whitecolor/nginx-dev:latest nginx-alpine",    
+    "push-nginx-latest": "docker push whitecolor/nginx-dev:latest",    
     "build-caddy": "docker build -t whitecolor/caddy-dev:2.7.6-alpine caddy-alpine",
-    "build-caddy-latest": "docker build -t whitecolor/caddy-dev:latest caddy-alpine"
+    "push-caddy": "docker push  whitecolor/caddy-dev:2.7.6-alpine",
+    "build-caddy-latest": "docker build -t whitecolor/caddy-dev:latest caddy-alpine",
+    "push-caddy-latest": "docker push whitecolor/caddy-dev:latest"
   }
 }
